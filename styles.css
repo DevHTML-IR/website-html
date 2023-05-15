@@ -1,0 +1,280 @@
+
+h1.title {
+  font-weight: bold;
+  font-size: 36px;
+  margin: 0;
+  top: 30%;
+  left: 44%;
+  animation: slideDown 0.5s;
+  animation-fill-mode: both;
+  text-align: center;
+}
+
+h1.contact {
+  margin-left: 10px;
+  animation: slideDown 0.5s;
+  animation-fill-mode: both;
+  left: 45%;
+  text-align: center;
+}
+
+h1.s {
+  margin-left: 10px;
+  animation: slideDown 0.5s;
+  animation-fill-mode: both;
+  left: 46%;
+  text-align: center;
+}
+
+h1.s-en {
+  margin-left: 10px;
+  animation: slideDown 0.5s;
+  animation-fill-mode: both;
+  left: 44%;
+  text-align: center;
+}
+
+h1.f {
+  margin-left: 10px;
+  animation: slideDown 0.5s;
+  animation-fill-mode: both;
+  left: 47%;
+  text-align: center;
+}
+
+h1.f-en {
+  margin-left: 10px;
+  animation: slideDown 0.5s;
+  animation-fill-mode: both;
+  left: 45%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  animation: slideDown 0.5s ease-out;
+  animation-fill-mode: forwards;
+  margin-left: 10px;
+}
+
+h3 {
+  font-size: 18px;
+  animation: slideDown 0.5s ease-out;
+  animation-fill-mode: forwards;
+}
+
+p, a {
+  margin-left: 10px;
+  animation: slideDown 0.5s;
+  animation-fill-mode: both;
+  color: #fff;
+}
+
+p.soon {
+  font-size: 16px;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 20px;
+  color: #000;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation: slideDown 0.5s;
+  animation-fill-mode: both;
+}
+
+button:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+button:active {
+  background-color: #333;
+}
+
+button:focus {
+  outline: none;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+body {
+  background-color: #222;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+header {
+  background-image: url('images/image.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 36px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+  position: relative;
+  display: inline;
+}
+
+nav li ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  padding: 5px;
+  display: none;
+}
+
+nav li:hover ul {
+  display: block;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav ul ul {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 150px;
+  display: none;
+}
+
+footer {
+  background-color: #222;
+  padding: 10px;
+  text-align: center;
+  animation: slideDown 0.5s;
+  animation-fill-mode: both;
+}
+
+.language-select {
+  display: inline-block;
+  text-align: center;
+  top: 10px;
+}
+
+.language-select label {
+  margin-right: 10px;
+}
+
+.language-select select {
+  padding: 5px;
+}
+
+copyright {
+  text-align: center;
+}
+/* Styles pour les appareils mobiles */
+@media only screen and (max-width: 600px) {
+  h1.title {
+    font-size: 24px;
+    top: 20%;
+    left: 50%;
+  }
+
+  h1.contact,
+  h1.s,
+  h1.s-en,
+  h1.f,
+  h1.f-en {
+    font-size: 24px;
+    margin-left: 5px;
+    left: 50%;
+  }
+
+  h2 {
+    font-size: 18px;
+    margin-left: 5px;
+  }
+
+  p,
+  a {
+    margin-left: 5px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  header h1 {
+    font-size: 24px;
+    top: 5%;
+  }
+
+  nav {
+    padding: 5px;
+  }
+
+  nav li {
+    margin: 0 5px;
+  }
+
+  nav li ul {
+    padding: 2px;
+  }
+
+  footer {
+    padding: 5px;
+  }
+}
