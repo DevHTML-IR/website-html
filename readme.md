@@ -9,7 +9,7 @@ Le projet est organisé de la manière suivante :
 - **index.html** : Page d'accueil du site.
 - **contact.html** : Page de contact.
 
-Le dossier **css** contient les fichiers CSS utilisés pour la mise en page du site.
+Le fichier **css** contient les fichiers CSS utilisés pour la mise en page du site.
 
 ## Fonctionnalités
 
