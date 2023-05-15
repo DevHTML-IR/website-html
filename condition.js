@@ -7,7 +7,8 @@ document.addEventListener("contextmenu", function (e) {
   tempDiv.style.top = e.clientY + "px";
   tempDiv.style.fontSize = "20px";
   tempDiv.style.transform = "translate(-50%, -100%)";
-  tempDiv.style.zIndex = "9999";
+  tempDiv.style.zIndex = "9999";  
+  tempDiv.innerHTML = "🚫";
 
   document.body.appendChild(tempDiv);
 
