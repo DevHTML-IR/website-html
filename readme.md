@@ -13,7 +13,7 @@ Le fichier **css** contient les fichiers CSS utilisés pour la mise en page du s
 
 ## Fonctionnalités
 
-Le site présente les fonctionnalités suivantes :
+Le site présente les fonctionnalités suivantes :https://devhtml-ir.github.io/website-html/fr/index
 
 - Navigation simple avec un menu de navigation.
 - Présentation des projets avec des images et des descriptions.
