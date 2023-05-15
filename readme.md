@@ -7,8 +7,6 @@ Ce référentiel contient le code source du site web HTML. Ce site a été cré�
 Le projet est organisé de la manière suivante :
 
 - **index.html** : Page d'accueil du site.
-- **about.html** : Page à propos de moi.
-- **projects.html** : Page présentant mes projets.
 - **contact.html** : Page de contact.
 
 Le dossier **css** contient les fichiers CSS utilisés pour la mise en page du site.
