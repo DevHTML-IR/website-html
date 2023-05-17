@@ -3,6 +3,18 @@
 
 <head>
   <title>Langue - DevHTML-IR</title>
+  <script>
+    // Détection d'Internet Explorer et de sa version
+    var isIE = /Trident/.test(navigator.userAgent);
+    var IEVersion = navigator.userAgent.match(/MSIE (\d+)/);
+
+    // Vérification si c'est Internet Explorer et si la version est obsolète (par exemple, inférieure à 11)
+    if (isIE && IEVersion && parseInt(IEVersion[1]) < 11) {
+      // Affichage du message d'avertissement
+      var warningMessage = 'Votre navigateur Internet Explorer est obsolète. Veuillez migrer vers Google Chrome, Firefox ou Opera pour une meilleure expérience.';
+      alert(warningMessage);
+    }
+  </script>
   <link rel="icon" href="images/logo.png" type="image/x-icon">
 
   <link rel="stylesheet" href="styles.css">
