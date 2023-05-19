@@ -6,11 +6,15 @@
   <script>
     // Détection du navigateur
     var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+    var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
 
-    // Vérification si le navigateur est Google Chrome
-    if (!isChrome) {
-      // Affichage de la fenêtre d'avertissement
-      var warningMessage = 'Ce site fonctionne mieux avec Google Chrome. Veuillez l\'utiliser pour une expérience optimale.';
+    // Vérification si le navigateur est Google Chrome ou Safari
+    if (!isChrome && !isSafari) {
+      // Redirection vers la page de téléchargement de Google Chrome
+      window.location.href = 'https://www.google.com/chrome/';
+
+      // Message d'avertissement (affiché si la redirection échoue)
+      var warningMessage = 'Ce site est optimisé pour Google Chrome et Safari. Veuillez télécharger Google Chrome pour une expérience optimale.';
       alert(warningMessage);
     }
   </script>
