@@ -10,12 +10,14 @@
 
     // Vérification si le navigateur est Google Chrome ou Safari
     if (!isChrome && !isSafari) {
-      // Redirection vers la page de téléchargement de Google Chrome
-      window.location.href = 'https://www.google.com/chrome/';
-
-      // Message d'avertissement (affiché si la redirection échoue)
-      var warningMessage = 'Ce site est optimisé pour Google Chrome et Safari. Veuillez télécharger Google Chrome pour une expérience optimale.';
-      alert(warningMessage);
+      // Message d'avertissement
+      var warningMessage = 'Ce site est optimisé pour Google Chrome et Safari. \ Veuillez télécharger Google Chrome pour une expérience optimale.';
+      
+      // Affichage de la fenêtre d'avertissement
+      if (confirm(warningMessage)) {
+        // Redirection vers le lien spécifique (par exemple, la page de téléchargement de Google Chrome)
+        window.location.href = 'https://www.google.com/chrome/';
+      }
     }
   </script>
   <link rel="icon" href="images/logo.png" type="image/x-icon">
