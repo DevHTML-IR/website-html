@@ -9,14 +9,9 @@
 
     // Vérification si le navigateur est Google Chrome
     if (!isChrome) {
-      // Affichage du message d'avertissement
+      // Affichage de la fenêtre d'avertissement
       var warningMessage = 'Ce site fonctionne mieux avec Google Chrome. Veuillez l\'utiliser pour une expérience optimale.';
-      var warningElement = document.createElement('div');
-      warningElement.style.background = '#f8d7da';
-      warningElement.style.color = '#721c24';
-      warningElement.style.padding = '10px';
-      warningElement.textContent = warningMessage;
-      document.body.insertBefore(warningElement, document.body.firstChild);
+      alert(warningMessage);
     }
   </script>
   <link rel="icon" href="images/logo.png" type="image/x-icon">
