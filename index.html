@@ -4,15 +4,19 @@
 <head>
   <title>Langue - DevHTML-IR</title>
   <script>
-    // Détection d'Internet Explorer et de sa version
-    var isIE = /Trident/.test(navigator.userAgent);
-    var IEVersion = navigator.userAgent.match(/MSIE (\d+)/);
+    // Détection du navigateur
+    var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
 
-    // Vérification si c'est Internet Explorer et si la version est obsolète (par exemple, inférieure à 11)
-    if (isIE && IEVersion && parseInt(IEVersion[1]) < 11) {
+    // Vérification si le navigateur est Google Chrome
+    if (!isChrome) {
       // Affichage du message d'avertissement
-      var warningMessage = 'Votre navigateur Internet Explorer est obsolète. Veuillez migrer vers Google Chrome, Firefox ou Opera pour une meilleure expérience.';
-      alert(warningMessage);
+      var warningMessage = 'Ce site fonctionne mieux avec Google Chrome. Veuillez l\'utiliser pour une expérience optimale.';
+      var warningElement = document.createElement('div');
+      warningElement.style.background = '#f8d7da';
+      warningElement.style.color = '#721c24';
+      warningElement.style.padding = '10px';
+      warningElement.textContent = warningMessage;
+      document.body.insertBefore(warningElement, document.body.firstChild);
     }
   </script>
   <link rel="icon" href="images/logo.png" type="image/x-icon">
