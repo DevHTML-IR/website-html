@@ -6,21 +6,23 @@
   <script>
     // Détection du navigateur
     var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-    var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
 
-    // Vérification si le navigateur est Google Chrome ou Safari
-    if (!isChrome && !isSafari) {
-      // Message d'avertissement
-      var warningMessage = 'Ce site est optimisé pour Google Chrome et Safari. \ Veuillez télécharger Google Chrome pour une expérience optimale.';
-
+    // Vérification si le navigateur est Google Chrome
+    if (isChrome) {
+      // Message de remerciement
+      var thankYouMessage = 'Merci d\'utiliser Google Chrome pour visiter le site :)';
+      alert(thankYouMessage);
+    } else {
+      // Message d'avertissement pour les autres navigateurs
+      var warningMessage = 'Ce site est optimisé pour Google Chrome. Veuillez télécharger Google Chrome pour une expérience optimale.';
+      
       // Affichage de la fenêtre d'avertissement
       if (confirm(warningMessage)) {
-        // Redirection vers le lien spécifique suite à l'acceptation
+        // Redirection vers le lien spécifique (par exemple, la page de téléchargement de Google Chrome)
         window.location.href = 'https://www.google.com/chrome/';
-      }
-      else {
-        // Redirection vers le spécifique suite au refus
-        window.location.href = 'about:blank'
+      } else {
+        // Redirection vers une page blanche
+        window.location.href = 'about:blank';
       }
     }
   </script>
