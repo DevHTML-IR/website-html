@@ -1,40 +1,52 @@
 <!DOCTYPE html>
 <html lang="fr">
+
+<html>
+
 <head>
-  <title>Espace Privé</title>
-  <link rel="icon" href="../images/logo.png" type="image/x-icon">
-  <link rel="stylesheet" href="../styles.css">
+    <title>Home - DevHTML-IR</title>
+    <link rel="icon" href="../images/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../condition.js"></script>
 </head>
+
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Revenir sur le site d'origine</a></li>
-    </ul>
-  </nav>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="../styles.css" rel="stylesheet">
-</head>
-<body>
-  <div class="login-box">
-    <h2>Connexion</h2>
-    <form action="private.php" method="post">
-      <div class="user-box">
-        <input type="text" name="username" required="">
-        <label>Nom d'utilisateur</label>
-      </div>
-      <div class="user-box">
-        <input type="password" name="password" required="">
-        <label>Mot de passe</label>
-      </div>
-      <button type="submit">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        Se connecter
-      </button>
-    </form>
-  </div>
+    <header>
+        <h1 class="title">Bienvenue</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="movies.html">Film</a></li>
+            <li><a href="tv-series.html">Série TV</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="private.html">Section Privé</a></li>
+        </ul>
+    </nav>
+    <h2>Services offerts</h2>
+    <p>Sur ce site Web, vous trouverez des films, des séries télévisées et des rediffusions d'émissions télévisées. Les services du site peuvent évoluer ou
+        proposer de nouveaux services en fonction de la demande des utilisateurs.</p>
+    <h2>Films</h2>
+    <p>Sur la page du film, vous pouvez regarder ou revoir des films sortis en salles pour revivre l'action du film. C'est
+        à l'abri du virus! Les films sont stockés dans MEGA Cloud.</p>
+    <h2>Séries télévisées</h2>
+    <p>Sur la page des séries TV, vous trouverez des séries Netflix à regarder sans dépenser d'argent et sans risque de
+        virus ! Les séries sont stockées dans MEGA Cloud.</p>
+    <h2>Contacter</h2>
+    <p>En cas de problème, contactez-nous par e-mail.</p>
 </body>
+<footer>
+    <div class="lang-select">
+        <select onchange="location = this.value;">
+            <option value="index.html">English</option>
+            <option value="../fr/index.html">Français</option>
+        </select>
+    </div>
+    <div class="copyright">
+        © DevHTML-IR - 2023
+    </div>
+</footer>
+
+
 </html>
