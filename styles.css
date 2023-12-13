@@ -224,7 +224,9 @@ body {
 
 body.star-ac-2023 {
   background-image: url('images/star-ac-2023.jpg');
+  background-size: cover;
 }
+
 
 .login-box {
   position: absolute;
