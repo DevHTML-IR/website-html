@@ -85,6 +85,10 @@ header {
   position: relative;
 }
 
+body.star-ac-2023 {
+  background-image: url('images/star-ac-2023.jpg');
+}
+
 header::before {
   content: "";
   background-color: rgba(0, 0, 0, 0.5);
