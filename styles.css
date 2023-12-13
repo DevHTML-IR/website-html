@@ -1,46 +1,8 @@
-@media (min-width: 768px) and (max-width: 1024px) {
-  .container {
-    width: 50%;
-  }
-}
-
-/* h1.title, h1.contact, h1.s, h1.s-en, h1.f, h1.f-en, h1.f-prive {
-  margin-left: 10px;
-  animation: slideDown 0.5s;
-  animation-fill-mode: both;
+h1{
   text-align: center;
-  position: absolute;
-} */
-
-h1.title {
-  font-weight: bold;
-  font-size: 36px;
-  left: 44%;
+  margin-top: 2%;
 }
 
-h1.contact {
-  left: 45%;
-}
-
-h1.s {
-  left: 46%;
-}
-
-h1.s-en {
-  left: 44%;
-}
-
-h1.f {
-  left: 47%;
-}
-
-h1.f-en {
-  left: 45%;
-}
-
-h1.f-prive {
-  left: 41%;
-}
 
 h2, h3 {
   font-size: 24px;
