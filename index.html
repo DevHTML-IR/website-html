@@ -4,32 +4,32 @@
 <head>
   <title>Langue - DevHTML-IR</title>
   <script>
-// Détection du navigateur
-var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    // Détection du navigateur
+    var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+    var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
-// Vérification si le navigateur est Google Chrome
-if (isChrome) {
-  // Message de remerciement
-  var thankYouMessage = 'Merci d\'utiliser Google Chrome pour visiter le site :)';
-  alert(thankYouMessage);
-} else if (isSafari) {
-  // Message de remerciement pour Safari
-  var thankYouMessage = 'Merci d\'utiliser Safari pour visiter le site.';
-  alert(thankYouMessage);
-} else {
-  // Message d'avertissement pour les autres navigateurs
-  var warningMessage = 'Ce site est optimisé pour Google Chrome ou Safari. Je vous conseille de télécharger Google Chrome ou Safari pour une expérience optimale.';
+    // Vérification si le navigateur est Google Chrome
+    if (isChrome) {
+      // Message de remerciement
+      var thankYouMessage = 'Merci d\'utiliser Google Chrome pour visiter le site :)';
+      alert(thankYouMessage);
+    } else if (isSafari) {
+      // Message de remerciement pour Safari
+      var thankYouMessage = 'Merci d\'utiliser Safari pour visiter le site.';
+      alert(thankYouMessage);
+    } else {
+      // Message d'avertissement pour les autres navigateurs
+      var warningMessage = 'Ce site est optimisé pour Google Chrome ou Safari. Je vous conseille de télécharger Google Chrome ou Safari pour une expérience optimale.';
 
-  // Affichage de la fenêtre d'avertissement
-  if (confirm(warningMessage)) {
-    // Redirection vers le lien spécifique (par exemple, la page de téléchargement de Google Chrome)
-    window.location.href = 'https://www.google.com/chrome/';
-  } else {
-    // Redirection vers une page blanche
-    window.location.href = 'about:blank';
-  }
-}
+      // Affichage de la fenêtre d'avertissement
+      if (confirm(warningMessage)) {
+        // Redirection vers le lien spécifique (par exemple, la page de téléchargement de Google Chrome)
+        window.location.href = 'https://www.google.com/chrome/';
+      } else {
+        // Redirection vers une page blanche
+        window.location.href = 'about:blank';
+      }
+    }
 
   </script>
   <link rel="icon" href="images/logo.png" type="image/x-icon">

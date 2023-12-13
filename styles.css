@@ -1,22 +1,25 @@
-h1{
+h1 {
   text-align: center;
   margin-top: 2%;
 }
 
 
-h2, h3 {
+h2,
+h3 {
   font-size: 24px;
   animation: slideDown 0.5s ease-out;
   animation-fill-mode: forwards;
   margin-left: 10px;
 }
+
 /*
 h3 {
   font-size: 18px;
 }
 */
 
-p, a {
+p,
+a {
   margin-left: 10px;
   animation: slideDown 0.5s;
   animation-fill-mode: both;
@@ -58,6 +61,7 @@ button:focus {
     transform: translateY(-100%);
     opacity: 0;
   }
+
   to {
     transform: translateY(0%);
     opacity: 1;
@@ -209,6 +213,7 @@ copyright {
 html {
   height: 100%;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -263,8 +268,8 @@ body {
   transition: 0.5s;
 }
 
-.login-box .user-box input:focus ~ label,
-.login-box .user-box input:valid ~ label {
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
   top: -20px;
   left: 0;
   color: #f68e44;
@@ -290,9 +295,9 @@ body {
   color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 5px #f4c803,
-              0 0 25px #bd9d0b,
-              0 0 50px #f4e403,
-              0 0 100px #d5cf1e;
+    0 0 25px #bd9d0b,
+    0 0 50px #f4e403,
+    0 0 100px #d5cf1e;
 }
 
 .login-box a span {
@@ -313,7 +318,9 @@ body {
   0% {
     left: -100%;
   }
-  50%, 100% {
+
+  50%,
+  100% {
     left: 100%;
   }
 }
@@ -332,7 +339,9 @@ body {
   0% {
     top: -100%;
   }
-  50%, 100% {
+
+  50%,
+  100% {
     top: 100%;
   }
 }
@@ -351,7 +360,9 @@ body {
   0% {
     right: -100%;
   }
-  50%, 100% {
+
+  50%,
+  100% {
     right: 100%;
   }
 }
@@ -370,7 +381,9 @@ body {
   0% {
     bottom: -100%;
   }
-  50%, 100% {
+
+  50%,
+  100% {
     bottom: 100%;
   }
 }
