@@ -10,10 +10,11 @@ h2, h3 {
   animation-fill-mode: forwards;
   margin-left: 10px;
 }
-
+/*
 h3 {
   font-size: 18px;
 }
+*/
 
 p, a {
   margin-left: 10px;
