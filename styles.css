@@ -85,9 +85,6 @@ header {
   position: relative;
 }
 
-body.star-ac-2023 {
-  background-image: url('images/star-ac-2023.jpg');
-}
 
 header::before {
   content: "";
@@ -223,6 +220,10 @@ body {
   padding: 0;
   font-family: sans-serif;
   background: linear-gradient(#30142b, #a12727);
+}
+
+body.star-ac-2023 {
+  background-image: url('images/star-ac-2023.jpg');
 }
 
 .login-box {
