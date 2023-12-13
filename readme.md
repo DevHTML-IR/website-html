@@ -11,6 +11,7 @@ Le projet est organisé de la manière suivante :
 - **serie.html** : Série Netflix. 
 - **film.html** : Film Cinéma.
 - **contact.html** : Page de contact.
+- **star-ac-2023.html**: Résultats des sondages.
 
 Le fichier **css** contient les fichiers CSS utilisés pour la mise en page du site.
 
@@ -54,6 +55,7 @@ The project is organized as follows:
 - **tv-series.html**: Netflix TV series.
 - **movies.html**: Cinema movies.
 - **contact.html**: Contact page.
+- **star-ac-2023.html**: Result of forms.
 
 The **css** folder contains CSS files used for the site's layout.
 
