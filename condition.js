@@ -14,7 +14,7 @@ document.addEventListener("contextmenu", function (e) {
 
   setTimeout(function () {
     tempDiv.remove();
-  }, 1000);
+  }, 500);
 }, false);
 
 document.addEventListener("keydown", function (e) {
