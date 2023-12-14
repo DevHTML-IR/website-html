@@ -23,11 +23,11 @@
       <h2>Connexion</h2>
       <form>
         <div class="user-box">
-          <input type="text" name="" required="">
+          <input type="text" name="test" required="">
           <label>Nom d'utilisateur</label>
         </div>
         <div class="user-box">
-          <input type="password" name="" required="">
+          <input type="password" name="test" required="">
           <label>Mot de passe</label>
         </div>
         <a href="#">
@@ -51,5 +51,23 @@
       © DevHTML-IR - 2023
     </div>
   </footer>
+  <script>
+    function validateForm() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      // Vérification des informations d'identification (pour test, vous pouvez utiliser "test" comme username et mot de passe)
+      if (username === "test" && password === "test") {
+        alert("Connexion réussie!");
+        // Rediriger vers la page privé/index.html
+        window.location.href = "privé/index.html";
+        return false; // Empêcher la soumission du formulaire
+      } else {
+        alert("Nom d'utilisateur ou mot de passe incorrect!");
+        return false; // Empêcher la soumission du formulaire
+      }
+    }
+  </script>
+
 
 </html>
