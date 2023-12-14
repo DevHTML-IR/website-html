@@ -5,6 +5,7 @@
   <title>Espace Privé</title>
   <link rel="icon" href="../images/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="../styles.css">
+  <script src="../condition.js"></script>
 </head>
 
 <body>
@@ -23,14 +24,14 @@
       <h2>Connexion</h2>
       <form>
         <div class="user-box">
-          <input type="text" name="test" required="">
+          <input type="text" id="username" name="" required="">
           <label>Nom d'utilisateur</label>
         </div>
         <div class="user-box">
-          <input type="password" name="test" required="">
+          <input type="password" id="password" name="" required="">
           <label>Mot de passe</label>
         </div>
-        <a href="#">
+        <a href="#" onclick="validateForm();">
           <span></span>
           <span></span>
           <span></span>
@@ -39,6 +40,24 @@
         </a>
       </form>
     </div>
+
+    <script>
+      function validateForm() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        // Vérification des informations d'identification (pour test, vous pouvez utiliser "test" comme username et mot de passe)
+        if (username === "test" && password === "test") {
+          alert("Connexion réussie!");
+          // Rediriger vers la page privé/index.html
+          window.location.href = "privé/index.html";
+          return false; // Empêcher la soumission du formulaire
+        } else {
+          alert("Nom d'utilisateur ou mot de passe incorrect!");
+          return false; // Empêcher la soumission du formulaire
+        }
+      }
+    </script>
   </body>
   <footer>
     <div class="lang-select">
@@ -48,26 +67,4 @@
       </select>
     </div>
     <div class="copyright">
-      © DevHTML-IR - 2023
-    </div>
-  </footer>
-  <script>
-    function validateForm() {
-      var username = document.getElementById("username").value;
-      var password = document.getElementById("password").value;
-
-      // Vérification des informations d'identification (pour test, vous pouvez utiliser "test" comme username et mot de passe)
-      if (username === "test" && password === "test") {
-        alert("Connexion réussie!");
-        // Rediriger vers la page privé/index.html
-        window.location.href = "privé/index.html";
-        return false; // Empêcher la soumission du formulaire
-      } else {
-        alert("Nom d'utilisateur ou mot de passe incorrect!");
-        return false; // Empêcher la soumission du formulaire
-      }
-    }
-  </script>
-
-
-</html>
+      © 
