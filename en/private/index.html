@@ -1,0 +1,18 @@
+<script>
+    // Fonction pour vérifier si l'utilisateur est connecté
+    function checkAuthentication() {
+      var isAuthenticated = localStorage.getItem("authenticated");
+  
+      // Si l'utilisateur n'est pas connecté, afficher un message et rediriger vers la page de connexion
+      if (!isAuthenticated) {
+        alert("To access this page, you must log in.");
+        window.location.href = "../private.html"; // Assurez-vous de remplacer "login.html" par le chemin réel de votre page de connexion
+      }
+    }
+  
+    // Appeler la fonction au chargement de la page
+    document.addEventListener("DOMContentLoaded", function () {
+      checkAuthentication();
+    });
+  </script>
+  
