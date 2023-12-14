@@ -85,6 +85,14 @@ header {
   position: relative;
 }
 
+header.star-ac-2023 {
+  background-image: url('images/star-ac-2023.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+  position: relative;
+}
+
 
 header::before {
   content: "";
@@ -104,6 +112,7 @@ header h1 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 
 nav {
   color: #fff;
@@ -220,11 +229,6 @@ body {
   padding: 0;
   font-family: sans-serif;
   background: linear-gradient(#30142b, #a12727);
-}
-
-body.star-ac-2023 {
-  background-image: url('images/star-ac-2023.jpg');
-  background-size: cover;
 }
 
 
